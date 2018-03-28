@@ -11,7 +11,7 @@ void R4::executerRegleModification()
 {
 	if (donnees->setD1(donnees->getD1() - 3))
 	{
-		resultat->reussite(getId(), to_string(donnees->getD1())+"reussite de modification D1 = D1 - D3");
+		resultat->reussite(getId(), "reussite de modification D1 = D1 - D3 :"+to_string(donnees->getD1()));
 	}
 	else {
 		resultat->echec(getId(), "D1 n'est pas modifié");

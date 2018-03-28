@@ -10,7 +10,7 @@ void RegleFin::executerRegleModification()
 {
 	if (donnees->setD5(donnees->getD5() + 10))
 	{
-		resultat->reussite(getId(), to_string(donnees->getD1()) + "reussite de modification D5=D5+10");
+		resultat->reussite(getId(), "reussite de modification D5=D5+10 :"+to_string(donnees->getD5()));
 	}
 	else
 	{
